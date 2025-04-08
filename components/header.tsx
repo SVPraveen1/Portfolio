@@ -141,7 +141,7 @@ const Header = () => {
             asChild
           >
             <a
-              href="/resume.pdf"
+              href="./resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
