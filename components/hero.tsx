@@ -1,25 +1,25 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { Github, Linkedin, Download, ArrowDown } from "lucide-react"
-import { TypeAnimation } from "react-type-animation"
+import { useRef } from "react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Download, ArrowDown } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
-  const scrollRef = useRef<HTMLDivElement>(null)
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about")
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
-      const offsetTop = aboutSection.offsetTop
+      const offsetTop = aboutSection.offsetTop;
       window.scrollTo({
         top: offsetTop - 80, // Adjust for header height
         behavior: "smooth",
-      })
+      });
     }
-  }
+  };
 
   return (
     <section className="relative h-screen flex items-center justify-center">
@@ -52,7 +52,16 @@ const Hero = () => {
             Hi, I&apos;m Praveen — I build{" "}
             <span className="gradient-text">
               <TypeAnimation
-                sequence={["intelligent", 1000, "efficient", 1000, "responsive", 1000, "AI-powered", 1000]}
+                sequence={[
+                  "intelligent",
+                  1000,
+                  "efficient",
+                  1000,
+                  "responsive",
+                  1000,
+                  "AI-powered",
+                  1000,
+                ]}
                 wrapper="span"
                 speed={50}
                 repeat={Number.POSITIVE_INFINITY}
@@ -67,7 +76,8 @@ const Hero = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="mb-10 text-lg text-gray-400 max-w-2xl mx-auto"
           >
-            Final-year B.Tech CSE student from IIITDM Kancheepuram, actively looking for a full-time developer role.
+            Final-year B.Tech CSE student from IIITDM Kancheepuram, actively
+            looking for a full-time developer role.
           </motion.p>
 
           <motion.div
@@ -76,20 +86,48 @@ const Hero = () => {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="flex flex-wrap justify-center gap-4"
           >
-            <Button size="lg" className="rounded-full bg-primary hover:bg-primary/90" asChild>
-              <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>
+            <Button
+              size="lg"
+              className="rounded-full bg-primary hover:bg-primary/90"
+              asChild
+            >
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
                 <Download size={18} className="mr-2" />
                 Download Resume
-              </Link>
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="rounded-full" asChild>
-              <Link href="https://github.com/SVPraveen1" target="_blank" rel="noopener noreferrer">
+
+            <Button
+              variant="outline"
+              size="lg"
+              className="rounded-full"
+              asChild
+            >
+              <Link
+                href="https://github.com/SVPraveen1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github size={18} className="mr-2" />
                 GitHub
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="rounded-full" asChild>
-              <Link href="https://www.linkedin.com/in/ksvpraveen/" target="_blank" rel="noopener noreferrer">
+            <Button
+              variant="outline"
+              size="lg"
+              className="rounded-full"
+              asChild
+            >
+              <Link
+                href="https://www.linkedin.com/in/ksvpraveen/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin size={18} className="mr-2" />
                 LinkedIn
               </Link>
@@ -115,7 +153,7 @@ const Hero = () => {
         </Button>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
