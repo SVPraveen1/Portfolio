@@ -19,6 +19,14 @@ const projects = [
   },
   {
     id: 2,
+    title: "Health AI",
+    description: "AI-driven health assistant for personalized fitness and nutrition recommendations.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Gemini API"],
+    github: "https://github.com/SVPraveen1/health-ai",
+    demo: "https://health-ai-three.vercel.app/",
+  },
+  {
+    id: 3,
     title: "VaultX",
     description: "Secure password manager using Clerk for auth and encryption for safe credential storage.",
     tags: ["React", "Clerk", "PostgreSQL", "Encryption", "TypeScript"],
