@@ -106,6 +106,14 @@ const Experience = () => {
                   <span className="text-primary mr-2">•</span>
                   <span>NPTEL: Cloud Computing</span>
                 </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>NPTEL: Ethical Hacking</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>NPTEL: Joy of Computing Using Python</span>
+                </li>
               </ul>
             </CardContent>
           </Card>
