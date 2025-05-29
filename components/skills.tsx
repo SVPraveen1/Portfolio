@@ -81,7 +81,7 @@ const Skills = () => {
               <span className="text-sm font-mono text-gray-300">C/C++</span>
             </div>
             <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
-              <span className="text-sm font-mono text-gray-300">Flask</span>
+              <span className="text-sm font-mono text-gray-300">Django</span>
             </div>
             <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
               <span className="text-sm font-mono text-gray-300">Bootstrap</span>
@@ -102,7 +102,10 @@ const Skills = () => {
               <span className="text-sm font-mono text-gray-300">Scikit-Learn</span>
             </div>
             <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
-              <span className="text-sm font-mono text-gray-300">OpenAI API</span>
+              <span className="text-sm font-mono text-gray-300">LLM Integration</span>
+            </div>
+            <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
+              <span className="text-sm font-mono text-gray-300">AI Integration</span>
             </div>
             <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
               <span className="text-sm font-mono text-gray-300">Hugging Face</span>
