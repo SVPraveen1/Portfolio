@@ -116,6 +116,21 @@ const Skills = () => {
             <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
               <span className="text-sm font-mono text-gray-300">Git</span>
             </div>
+            <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
+              <span className="text-sm font-mono text-gray-300">Rest API</span>
+            </div>
+            <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
+              <span className="text-sm font-mono text-gray-300">Docker</span>
+            </div>
+            <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
+              <span className="text-sm font-mono text-gray-300">Firebase</span>
+            </div>
+            <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
+              <span className="text-sm font-mono text-gray-300">Supabase</span>
+            </div>
+            <div className="px-4 py-2 bg-gray-900/70 rounded-lg text-center">
+              <span className="text-sm font-mono text-gray-300">Neon Console</span>
+            </div>
           </motion.div>
         </motion.div>
       </div>
