@@ -57,7 +57,7 @@ const About = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                Strong background in React, Prisma, PostgreSQL, and modern JS tooling.
+                Experienced in full-stack development with expertise in React, Next.js, Python, Node.js, and modern web technologies. Proficient in AI integration, database management, and cloud platforms.
               </motion.p>
 
               <motion.p
