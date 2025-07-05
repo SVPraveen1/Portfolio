@@ -135,7 +135,7 @@ const Header = () => {
               LinkedIn
             </Link>
           </Button>
-          <Button
+          {/* <Button
             size="sm"
             className="rounded-full bg-primary hover:bg-primary/90"
             asChild
@@ -147,6 +147,15 @@ const Header = () => {
               download
             >
               <Download size={16} className="mr-2" />
+              Resume
+            </a>
+          </Button> */}
+          <Button
+            size="lg"
+            className="rounded-full bg-primary hover:bg-primary/90"
+            asChild
+          >
+            <a href="https://drive.google.com/file/d/1Qp2iBb8I-l_M9jb9RtvvCJ4YZFpUeC-h/view?usp=sharing">
               Resume
             </a>
           </Button>
@@ -224,7 +233,7 @@ const Header = () => {
                     LinkedIn
                   </Link>
                 </Button>
-                <Button
+                {/* <Button
                   className="w-full justify-start bg-primary hover:bg-primary/90"
                   asChild
                 >
@@ -237,6 +246,15 @@ const Header = () => {
                     <Download size={18} className="mr-2" />
                     Resume
                   </Link>
+                </Button> */}
+                <Button
+                  size="lg"
+                  className="rounded-full bg-primary hover:bg-primary/90"
+                  asChild
+                >
+                  <a href="https://drive.google.com/file/d/1Qp2iBb8I-l_M9jb9RtvvCJ4YZFpUeC-h/view?usp=sharing">
+                    Resume
+                  </a>
                 </Button>
               </div>
             </nav>
