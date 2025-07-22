@@ -28,6 +28,65 @@ const Experience = () => {
             <CardContent className="p-6">
               <div className="flex items-center mb-4 text-primary">
                 <Briefcase size={20} className="mr-2" />
+                <h3 className="text-xl font-bold">Web Developer Intern</h3>
+              </div>
+
+              <div className="flex items-center mb-6 text-gray-400 text-sm">
+                <CalendarDays size={16} className="mr-2" />
+                <span>GA Digital Solutions | May 2025 - July 2025</span>
+              </div>
+
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>
+                    Developing a coding assessment platform similar to HackerRank using React.js and Django, 
+                    creating a comprehensive evaluation system for technical interviews.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>
+                    Built recruiter dashboard, candidate IDE, and test workflows with live coding environments 
+                    to streamline the technical hiring process.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>
+                    Integrated JWT-based authentication with role management and secure test sessions, 
+                    ensuring data integrity and user security.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>
+                    Implemented PostgreSQL backend storage and designed REST APIs with Django REST Framework 
+                    for efficient data management and scalable architecture.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>
+                    Developed containerized code execution using Docker and explored Judge0 API for 
+                    secure and isolated code testing environments.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>
+                    Contributed to deployment pipeline using Vercel, Render, and CI/CD with GitHub Actions 
+                    for automated testing and deployment workflows.
+                  </span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gray-900/50 border-gray-800 overflow-hidden hover:border-primary/50 transition-all duration-300 project-card">
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4 text-primary">
+                <Briefcase size={20} className="mr-2" />
                 <h3 className="text-xl font-bold">Training & Placement Cell Coordinator</h3>
               </div>
 
