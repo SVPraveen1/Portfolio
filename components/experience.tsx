@@ -11,7 +11,7 @@ const Experience = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="experience" className="section bg-gray-900/30 relative">
+    <section id="experience" className="section bg-gradient-card relative">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="section-title gradient-text">Experience & Education</h2>
@@ -24,9 +24,9 @@ const Experience = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto space-y-8"
         >
-          <Card className="bg-gray-900/50 border-gray-800 overflow-hidden hover:border-primary/50 transition-all duration-300 project-card">
+          <Card className="bg-gradient-card border border-gray-700/50 overflow-hidden hover:border-gray-600 transition-all duration-300 project-card">
             <CardContent className="p-6">
-              <div className="flex items-center mb-4 text-primary">
+              <div className="flex items-center mb-4 text-gray-200">
                 <Briefcase size={20} className="mr-2" />
                 <h3 className="text-xl font-bold">Web Developer Intern</h3>
               </div>
@@ -38,42 +38,42 @@ const Experience = () => {
 
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Developing a coding assessment platform similar to HackerRank using React.js and Django, 
                     creating a comprehensive evaluation system for technical interviews.
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Built recruiter dashboard, candidate IDE, and test workflows with live coding environments 
                     to streamline the technical hiring process.
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Integrated JWT-based authentication with role management and secure test sessions, 
                     ensuring data integrity and user security.
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Implemented PostgreSQL backend storage and designed REST APIs with Django REST Framework 
                     for efficient data management and scalable architecture.
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Developed containerized code execution using Docker and explored Judge0 API for 
                     secure and isolated code testing environments.
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Contributed to deployment pipeline using Vercel, Render, and CI/CD with GitHub Actions 
                     for automated testing and deployment workflows.
@@ -83,9 +83,9 @@ const Experience = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gray-900/50 border-gray-800 overflow-hidden hover:border-primary/50 transition-all duration-300 project-card">
+          <Card className="bg-gradient-card border border-gray-700/50 overflow-hidden hover:border-gray-600 transition-all duration-300 project-card">
             <CardContent className="p-6">
-              <div className="flex items-center mb-4 text-primary">
+              <div className="flex items-center mb-4 text-gray-200">
                 <Briefcase size={20} className="mr-2" />
                 <h3 className="text-xl font-bold">Training & Placement Cell Coordinator</h3>
               </div>
@@ -97,21 +97,21 @@ const Experience = () => {
 
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Managed Campus Recruitment: Coordinated with companies to organize campus recruitment drives,
                     handled scheduling, logistics, and ensured a smooth process for students and recruiters.
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Skill Development Workshops: Organized workshops, including resume building, interview preparation,
                     and aptitude training, to improve placement readiness.
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Internship Coordination: Partnered with industries to source and coordinate internships, providing
                     students with early industry exposure and experience.
@@ -121,9 +121,9 @@ const Experience = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gray-900/50 border-gray-800 overflow-hidden hover:border-primary/50 transition-all duration-300 project-card">
+          <Card className="bg-gradient-card border border-gray-700/50 overflow-hidden hover:border-gray-600 transition-all duration-300 project-card">
             <CardContent className="p-6">
-              <div className="flex items-center mb-4 text-primary">
+              <div className="flex items-center mb-4 text-gray-200">
                 <Award size={20} className="mr-2" />
                 <h3 className="text-xl font-bold">Education</h3>
               </div>
@@ -135,11 +135,11 @@ const Experience = () => {
 
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>B.Tech in Computer Science and Engineering</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>
                     Relevant Coursework: Data Structures, Algorithms, Database Management, Web Development, Machine
                     Learning
@@ -149,28 +149,28 @@ const Experience = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gray-900/50 border-gray-800 overflow-hidden hover:border-primary/50 transition-all duration-300 project-card">
+          <Card className="bg-gradient-card border border-gray-700/50 overflow-hidden hover:border-gray-600 transition-all duration-300 project-card">
             <CardContent className="p-6">
-              <div className="flex items-center mb-4 text-primary">
+              <div className="flex items-center mb-4 text-gray-200">
                 <Award size={20} className="mr-2" />
                 <h3 className="text-xl font-bold">Certifications</h3>
               </div>
 
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>Udemy: Full Stack Web Development</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>NPTEL: Cloud Computing</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>NPTEL: Ethical Hacking</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="text-gray-400 mr-2">•</span>
                   <span>NPTEL: Joy of Computing Using Python</span>
                 </li>
               </ul>

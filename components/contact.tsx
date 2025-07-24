@@ -84,7 +84,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section bg-gray-900/30 relative">
+    <section id="contact" className="section bg-gradient-card relative">
       <div className="container">
         <motion.div
           ref={ref}
@@ -100,7 +100,7 @@ const Contact = () => {
             free to reach out!
           </p>
 
-          <Card className="bg-gray-900/50 border-gray-800 mb-10 hover:border-primary/50 transition-all duration-300">
+          <Card className="bg-gradient-card border border-gray-700/50 mb-10 hover:border-gray-600 transition-all duration-300">
             <CardContent className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <motion.div
@@ -111,14 +111,14 @@ const Contact = () => {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="flex items-center justify-center md:justify-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Mail size={20} className="text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-gray-800/50 flex items-center justify-center border border-gray-700">
+                    <Mail size={20} className="text-gray-300" />
                   </div>
                   <div className="text-left">
                     <h3 className="text-sm font-medium text-gray-400">Email</h3>
                     <Link
                       href="mailto:shyamkaruparthi@gmail.com"
-                      className="text-white hover:text-primary transition-colors"
+                      className="text-white hover:text-gray-300 transition-colors"
                     >
                       shyamkaruparthi@gmail.com
                     </Link>
@@ -133,14 +133,14 @@ const Contact = () => {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   className="flex items-center justify-center md:justify-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Phone size={20} className="text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-gray-800/50 flex items-center justify-center border border-gray-700">
+                    <Phone size={20} className="text-gray-300" />
                   </div>
                   <div className="text-left">
                     <h3 className="text-sm font-medium text-gray-400">Phone</h3>
                     <Link
                       href="tel:+918332929387"
-                      className="text-white hover:text-primary transition-colors"
+                      className="text-white hover:text-gray-300 transition-colors"
                     >
                       +91 8332929387
                     </Link>
@@ -157,7 +157,7 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mb-10"
           >
-            <Card className="bg-gray-900/50 border-gray-800 hover:border-primary/50 transition-all duration-300">
+            <Card className="bg-gradient-card border border-gray-700/50 hover:border-gray-600 transition-all duration-300">
               <CardContent className="p-8">
                 <h3 className="text-xl font-medium text-white mb-6 text-left">Send a Message</h3>
                 
@@ -222,7 +222,7 @@ const Contact = () => {
                     
                     <Button 
                       type="submit" 
-                      className="w-full md:w-auto rounded-full bg-primary hover:bg-primary/90"
+                      className="w-full md:w-auto rounded-full bg-gray-700 hover:bg-gray-600 text-gray-100"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
@@ -312,7 +312,7 @@ const Contact = () => {
               >
                 <Button
                   size="lg"
-                  className="rounded-full bg-primary hover:bg-primary/90"
+                  className="rounded-full bg-gray-700 hover:bg-gray-600 text-gray-100"
                   asChild
                 >
                   <a

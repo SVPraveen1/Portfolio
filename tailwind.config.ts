@@ -52,6 +52,12 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        'gradient-dark': 'linear-gradient(135deg, #111827 0%, #000000 50%, #1f2937 100%)',
+        'gradient-card': 'linear-gradient(135deg, rgba(55, 65, 81, 0.5) 0%, rgba(17, 24, 39, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%)',
+        'gradient-text': 'linear-gradient(135deg, #f3f4f6 0%, #9ca3af 50%, #6b7280 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #e5e7eb 0%, #d1d5db 50%, #9ca3af 100%)',
+      },
       fontFamily: {
         sans: ["var(--font-inter)"],
         mono: ["var(--font-jetbrains-mono)"],

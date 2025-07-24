@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen flex items-center justify-center">
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 z-0" />
+      <div className="absolute inset-0 bg-gradient-dark z-0" />
 
       <div className="container relative z-10">
         <motion.div
@@ -38,7 +38,7 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="mb-6 inline-block"
           >
-            <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
+            <span className="px-4 py-1.5 rounded-full bg-gradient-card border border-gray-700 text-gray-200 text-sm font-medium">
               Ai-Full Stack Developer
             </span>
           </motion.div>
@@ -88,7 +88,7 @@ const Hero = () => {
           >
             <Button
               size="lg"
-              className="rounded-full bg-primary hover:bg-primary/90"
+              className="rounded-full bg-gray-700 hover:bg-gray-600 text-gray-100"
               asChild
             >
               <a

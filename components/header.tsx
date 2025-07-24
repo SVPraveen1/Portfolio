@@ -80,7 +80,7 @@ const Header = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-gray-950/90 backdrop-blur-md shadow-md py-3"
+          ? "bg-black/80 backdrop-blur-md shadow-md py-3"
           : "bg-transparent py-5"
       )}
     >
@@ -104,8 +104,8 @@ const Header = () => {
             >
               <button
                 onClick={() => scrollToSection(link.id)}
-                className={`text-sm font-medium transition-all hover:text-primary ${
-                  activeSection === link.id ? "text-primary" : "text-gray-300"
+                className={`text-sm font-medium transition-all hover:text-gray-200 ${
+                  activeSection === link.id ? "text-gray-200" : "text-gray-400"
                 }`}
               >
                 {link.name}
@@ -152,7 +152,7 @@ const Header = () => {
           </Button> */}
           <Button
             size="lg"
-            className="rounded-full bg-primary hover:bg-primary/90"
+            className="rounded-full bg-gray-700 hover:bg-gray-600 text-gray-100"
             asChild
           >
             <a href="https://drive.google.com/file/d/1Qp2iBb8I-l_M9jb9RtvvCJ4YZFpUeC-h/view?usp=sharing">
@@ -196,8 +196,8 @@ const Header = () => {
                     onClick={() => scrollToSection(link.id)}
                     className={`text-xl font-medium transition-all ${
                       activeSection === link.id
-                        ? "text-primary"
-                        : "text-gray-300"
+                        ? "text-gray-200"
+                        : "text-gray-400"
                     }`}
                   >
                     {link.name}
@@ -249,7 +249,7 @@ const Header = () => {
                 </Button> */}
                 <Button
                   size="lg"
-                  className="rounded-full bg-primary hover:bg-primary/90"
+                  className="rounded-full bg-gray-700 hover:bg-gray-600 text-gray-100"
                   asChild
                 >
                   <a href="https://drive.google.com/file/d/1Qp2iBb8I-l_M9jb9RtvvCJ4YZFpUeC-h/view?usp=sharing">

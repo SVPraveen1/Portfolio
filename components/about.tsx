@@ -11,7 +11,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="about" className="section bg-gray-900/30 relative">
+    <section id="about" className="section bg-gradient-card relative">
       <div className="container">
         <motion.div
           ref={ref}
@@ -29,7 +29,7 @@ const About = () => {
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <Card className="w-64 h-64 rounded-full overflow-hidden border-4 border-primary/20 p-1">
+                <Card className="w-64 h-64 rounded-full overflow-hidden border-4 border-gray-600/30 p-1 bg-gradient-card">
                   <div className="w-full h-full rounded-full overflow-hidden">
                     <Image
                       src="/Profile.jpeg"
@@ -86,13 +86,13 @@ const About = () => {
                 className="pt-4"
               >
                 <div className="flex flex-wrap gap-3">
-                  <div className="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">
+                  <div className="px-4 py-2 bg-gray-800/50 rounded-full text-gray-300 text-sm border border-gray-700">
                     <span className="font-mono">B.Tech CSE</span>
                   </div>
-                  <div className="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">
+                  <div className="px-4 py-2 bg-gray-800/50 rounded-full text-gray-300 text-sm border border-gray-700">
                     <span className="font-mono">IIITDM Kancheepuram</span>
                   </div>
-                  <div className="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">
+                  <div className="px-4 py-2 bg-gray-800/50 rounded-full text-gray-300 text-sm border border-gray-700">
                     <span className="font-mono">2022 - 2026</span>
                   </div>
                 </div>

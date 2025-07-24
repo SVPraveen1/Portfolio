@@ -1,26 +1,35 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Github, ExternalLink } from "lucide-react"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Github, ExternalLink } from "lucide-react";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 const projects = [
   {
     id: 1,
     title: "Sensai AI",
-    description: "AI-powered career assistant with resume building, interview prep, and real-time career insights.",
-    tags: ["React", "Next.js", "OpenAI", "Tailwind CSS", "Prisma", "PostgreSQL"],
+    description:
+      "AI-powered career assistant with resume building, interview prep, and real-time career insights.",
+    tags: [
+      "React",
+      "Next.js",
+      "OpenAI",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+    ],
     github: "https://github.com/SVPraveen1/sensei-ai",
     demo: "https://sensai-ai-eta.vercel.app/",
   },
   {
     id: 2,
     title: "Health AI",
-    description: "AI-driven health assistant for personalized fitness and nutrition recommendations.",
+    description:
+      "AI-driven health assistant for personalized fitness and nutrition recommendations.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Gemini API"],
     github: "https://github.com/SVPraveen1/health-ai",
     demo: "https://health-ai-three.vercel.app/",
@@ -28,16 +37,17 @@ const projects = [
   {
     id: 3,
     title: "VaultX",
-    description: "Secure password manager using Clerk for auth and encryption for safe credential storage.",
+    description:
+      "Secure password manager using Clerk for auth and encryption for safe credential storage.",
     tags: ["React", "Clerk", "PostgreSQL", "Encryption", "TypeScript"],
     github: "https://github.com/SVPraveen1/VaultX",
     demo: "https://vault-x-sigma.vercel.app/",
   },
-]
+];
 
 const Projects = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -47,15 +57,15 @@ const Projects = () => {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  }
+  };
 
   return (
-    <section className="section bg-gray-900/30 relative">
+    <section className="section bg-gradient-card relative">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="section-title gradient-text">Other Projects</h2>
@@ -70,31 +80,55 @@ const Projects = () => {
         >
           {projects.map((project) => (
             <motion.div key={project.id} variants={itemVariants}>
-              <Card className="h-full flex flex-col bg-gray-900/50 border-gray-800 hover:border-primary/50 transition-all duration-300 project-card">
+              <Card className="h-full flex flex-col bg-gradient-card border border-gray-700/50 hover:border-gray-600 transition-all duration-300 project-card">
                 <CardContent className="flex-grow p-6">
-                  <h3 className="text-xl font-bold mb-3 text-primary font-mono">{project.title}</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-200 font-mono">
+                    {project.title}
+                  </h3>
                   <p className="text-gray-300 mb-6">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full"
+                        className="px-3 py-1 text-xs font-medium bg-gray-800/50 text-gray-300 rounded-full border border-gray-700"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="border-t border-gray-800 p-6">
+                <CardFooter className="border-t border-gray-700 p-6">
                   <div className="flex gap-4">
-                    <Button variant="outline" size="sm" className="rounded-full group" asChild>
-                      <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} className="mr-2 group-hover:text-primary transition-colors" />
-                        <span className="group-hover:text-primary transition-colors">GitHub</span>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="rounded-full group border-gray-600 hover:bg-gray-700"
+                      asChild
+                    >
+                      <Link
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github
+                          size={16}
+                          className="mr-2 group-hover:text-gray-200 transition-colors"
+                        />
+                        <span className="group-hover:text-gray-200 transition-colors">
+                          GitHub
+                        </span>
                       </Link>
                     </Button>
-                    <Button size="sm" className="rounded-full bg-primary hover:bg-primary/90" asChild>
-                      <Link href={project.demo} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      size="sm"
+                      className="rounded-full bg-gray-700 hover:bg-gray-600 text-gray-100"
+                      asChild
+                    >
+                      <Link
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink size={16} className="mr-2" />
                         Live Demo
                       </Link>
@@ -114,19 +148,31 @@ const Projects = () => {
         >
           <p className="text-gray-300">
             To know more about my work, check my{" "}
-            <Link
-              href="https://github.com/SVPraveen1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
+            <Button
+              variant="outline"
+              size="sm"
+              className="rounded-full group border-gray-600 hover:bg-gray-700"
+              asChild
             >
-              GitHub
-            </Link>
+              <Link
+                href={"http://github.com/SVPraveen1"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github
+                  size={16}
+                  className="mr-2 group-hover:text-gray-200 transition-colors"
+                />
+                <span className="group-hover:text-gray-200 transition-colors">
+                  GitHub
+                </span>
+              </Link>
+            </Button>
           </p>
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
