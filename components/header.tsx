@@ -19,9 +19,9 @@ const Header = () => {
       // Determine active section based on scroll position
       const sections = [
         "about",
-        "projects",
-        "skills",
         "experience",
+        "skills",
+        "projects",
         "blog",
         "contact",
       ];
@@ -65,9 +65,9 @@ const Header = () => {
 
   const navLinks = [
     { name: "About", href: "#about", id: "about" },
-    { name: "Projects", href: "#projects", id: "projects" },
-    { name: "Skills", href: "#skills", id: "skills" },
     { name: "Experience", href: "#experience", id: "experience" },
+    { name: "Skills", href: "#skills", id: "skills" },
+    { name: "Projects", href: "#projects", id: "projects" },
     { name: "Blog", href: "#blog", id: "blog" },
     { name: "Contact", href: "#contact", id: "contact" },
   ];

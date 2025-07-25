@@ -12,10 +12,10 @@ export default function Home() {
     <div suppressHydrationWarning>
       <Hero />
       <About />
+      <Experience />
+      <Skills />
       <FeaturedProject />
       <Projects />
-      <Skills />
-      <Experience />
       <BlogSection />
       <Contact />
     </div>
