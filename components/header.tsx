@@ -155,7 +155,7 @@ const Header = () => {
             className="rounded-full bg-gray-700 hover:bg-gray-600 text-gray-100"
             asChild
           >
-            <a href="https://drive.google.com/file/d/1Qp2iBb8I-l_M9jb9RtvvCJ4YZFpUeC-h/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/10WO45fP0AzLS_0Jx8BaYZFd_kiHlKJy8/view?usp=sharing">
               Resume
             </a>
           </Button>
